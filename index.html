@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Living in Wisconsin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Living in Wisconsin</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('about')">About</a></li>
+                <li><a href="#" onclick="showSection('places')">Places</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="content-section active">
+            <h2>Welcome to Wisconsin</h2>
+            <p>Wisconsin is a state known for its beautiful lakes, cheese, and Midwestern hospitality. Whether you enjoy outdoor activities, delicious food, or friendly people, Wisconsin has it all.</p>
+        </section>
+
+        <section id="about" class="content-section">
+            <h2>About Wisconsin</h2>
+            <p>Located in the Midwestern United States, Wisconsin is bordered by two Great Lakes and is known for its diverse landscape of forests, farmlands, and lakes. The state has a strong agricultural tradition, particularly in dairy production.</p>
+        </section>
+
+        <section id="places" class="content-section">
+            <h2>Top Places to Visit</h2>
+            <ul>
+                <li><strong>Door County:</strong> Known for scenic coastal views, lighthouses, and cherry orchards.</li>
+                <li><strong>Apostle Islands:</strong> A chain of 21 islands on Lake Superior, perfect for kayaking and hiking.</li>
+                <li><strong>Devil's Lake State Park:</strong> Famous for its dramatic bluffs and crystal-clear lake.</li>
+                <li><strong>Milwaukee:</strong> Wisconsin’s largest city, home to breweries, museums, and vibrant culture.</li>
+                <li><strong>Madison:</strong> The state capital, known for its beautiful lakes and progressive vibe.</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="content-section">
+            <h2>Contact Us</h2>
+            <p>If you’d like to learn more about living in Wisconsin, feel free to get in touch with us through the form below:</p>
+            <form id="contactForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="formResponse"></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
